@@ -15,7 +15,8 @@ public class Main {
 		hostelStudent.setStudentId(scn.nextInt());
 
 		System.out.println("Student Name:");
-		hostelStudent.setName(scn.next());
+		String temp = scn.nextLine();
+		hostelStudent.setName(scn.nextLine());
 
 		System.out.println("Department Id:");
 		hostelStudent.setDepartmentId(scn.nextInt());
@@ -27,7 +28,8 @@ public class Main {
 		hostelStudent.setPhone(scn.next());
 
 		System.out.println("Hostel Name:");
-		hostelStudent.setHostelName(scn.next());
+		String tempo = scn.nextLine();
+		hostelStudent.setHostelName(scn.nextLine());
 
 		System.out.println("Room Number:");
 		hostelStudent.setRoomNumber(scn.nextInt());
@@ -36,7 +38,7 @@ public class Main {
 
 		String newRoom = scn.next();
 
-		while (newRoom != "Y") {
+		while (!newRoom.equals("Y") && !newRoom.equals("N") && !newRoom.equals("y") && !newRoom.equals("n")) {
 			System.out.println("Please choose a valid option.");
 			System.out.println();
 			System.out.println("Modify Room Number(Y/N)");
@@ -51,12 +53,12 @@ public class Main {
 
 		System.out.println("Modify Phone Number(Y/N)");
 		String newPhone = scn.next();
-//		while (newPhone != "Y" || newPhone != "N" || newPhone != "y" || newPhone != "n") {
-//			System.out.println("Please choose a valid option.");
-//			System.out.println();
-//			System.out.println("Modify Room Number(Y/N)");
-//			newPhone = scn.next();
-//		}
+		while (!newPhone.equals("Y") && !newPhone.equals("N") && !newPhone.equals("y") && !newPhone.equals("n")) {
+			System.out.println("Please choose a valid option.");
+			System.out.println();
+			System.out.println("Modify Room Number(Y/N)");
+			newPhone = scn.next();
+		}
 
 		if (newPhone.equals("Y") || newPhone.equals("y")) {
 
@@ -71,20 +73,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		Hosteller stud = getHostellerDetails();
-//		System.out.print("Students details are : ");
-//		System.out.print(stud.getStudentId() + " ");
-//		System.out.print(stud.getName() + " ");
-//		System.out.print(stud.getDepartmentId() + " ");
-//		System.out.print(stud.getGender() + " ");
-//		System.out.print(stud.getPhone() + " ");
-//		System.out.print(stud.getHostelName() + " ");
-//		System.out.print(stud.getRoomNumber() + " ");
+
+		System.out
+				.println("The Student Details are: " + stud + " " + stud.getHostelName() + " " + stud.getRoomNumber());
 
 	}
 
-	@Override
-	public String toString() {
-		return "Main [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
-	}
 }
