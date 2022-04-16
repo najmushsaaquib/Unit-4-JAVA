@@ -73,7 +73,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		Hosteller stud = getHostellerDetails();
-
+		
+		System.out.println();
 		System.out
 				.println("The Student Details are: " + stud + " " + stud.getHostelName() + " " + stud.getRoomNumber());
 

@@ -1,0 +1,13 @@
+Static Variables :- 😁️
+
+i) Belongs to Object
+ii) Can be accessed anywhere without creating any object
+iii) Are loaded in RAM first 
+
+
+Non-Static Variables :- 🙄️
+
+i) Belongs to Class
+ii) Can't be accessed unitl object of that class is created
+iii) Are stored in the Hard-Disk 
+	

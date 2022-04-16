@@ -1,0 +1,5 @@
+Unlike other programming language, JAVA creates a ".class" file while compiling the ".java" source code file which also knowns as "Byte Code".
+
+It doesn't matter on which platform you are, if you device has JVM installed in it. You can run that "Byte Code" which was generated when the java code was complied. 
+
+Hence in order to run the "Byte Code", it doesn't need to depend on a platform. And that is why, JAVA is a platform-independent programming language.

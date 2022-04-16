@@ -8,10 +8,12 @@ public class Main2 {
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("Enter no of bookings");
+
 		int bookings = scan.nextInt();
 
 		System.out.println("Enter the available tickets");
 		Ticket.availableTickets = scan.nextInt();
+
 		for (int i = 0; i < bookings; i++) {
 			System.out.println("Enter the ticketid");
 			int tickteId = scan.nextInt();
@@ -20,9 +22,6 @@ public class Main2 {
 
 			System.out.println("Enter the no of tickets");
 			int numOfTickets = scan.nextInt();
-
-//		System.out.println("Available Tickets");
-//		int availableTicket = scan.nextInt();
 
 			Ticket tic = new Ticket();
 			int totalPrice = tic.calculateTicketCost(numOfTickets, price);

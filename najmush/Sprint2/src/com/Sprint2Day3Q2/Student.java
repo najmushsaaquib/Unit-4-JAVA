@@ -8,9 +8,6 @@ public class Student {
 	String gender;
 	String phone;
 
-	
-
-
 	public int getStudentId() {
 		return studentId;
 	}
@@ -51,13 +48,11 @@ public class Student {
 		this.phone = phone;
 	}
 
-	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		
+
 		return studentId + " " + name + " " + departmentId + " " + gender + " " + phone;
 	}
-	
-	
+
 }
