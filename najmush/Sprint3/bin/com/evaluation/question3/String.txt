@@ -1,0 +1,35 @@
+ #String :-
+   1) Strings are Immutable - Once the value is assigned, you can't reassing the same value to a String Variable.
+   2) Strings are made in SCP (String Constant Pool) which is inside the Heap Area of the RAM.
+  
+   	  Example :
+	  String str = "example of String";
+  
+   
+ #StringBuffer :-
+   1) Unlike String, StringBuffer is mutable, meaning you can reassign or modify the value of a StringBuffer variable as many times as you like. 
+   2) StringBuffer are thread safe. 
+   3) Due to thread safe, String buffer is slow in performance.
+   
+	  
+	  Example :
+	  StringBuffer anotherStr = new StringBuffer("example of StringBuffer");   
+   
+ #StringBuilder :-
+    1) 1) Similiar to StringBuffer,  StringBuilder is also mutable.
+    2) StringBuilder are not considered to be thread safe.
+    3) Since it is not thread safe, StringBuilder is comparitably faster than StringBuffer
+   
+   		Example:
+   		StringBuilder modifiedStr = new StringBuilder("example of StringBuilder");
+   
+   
+   
+   #tostring();
+   
+   toString(); method is used to convert the Object Representation into a String value
+    If we try to print an Object, by default toString() method is called and it prints the class name, + "@" + some hexadecimal hascode of the Object
+    
+    
+
+

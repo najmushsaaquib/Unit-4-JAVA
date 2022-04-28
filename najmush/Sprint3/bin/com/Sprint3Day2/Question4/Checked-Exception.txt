@@ -1,0 +1,58 @@
+What is the difference between the Checked and Unchecked exceptions explain it
+with an example? 
+
+
+CHECKED EXCEPTION :-
+-----------------
+
+					While compiling any java source code, the compiler scans the whole program for
+					any faulty code or syntactical errors. Or a code that may throw an exceptions 
+					at compile time and doesn't compile the code into machine code. 
+					These exceptions are known as Checked Exceptions.
+					Since, due to checked exception compiler doesn't compile the code into machine
+					code, these are also knows as Compile-time exceptions.
+					
+					
+					
+					we can resolve checked exception by providing try-catch block;
+					The class that directly inherit the throwable class except RuntimeException
+				 	and Error are called checked exception.
+					
+					example:
+					IOExceptions, SQLException,etc
+					
+
+UNCHECKED EXCEPTION:-
+--------------------
+
+
+					Those exception which are not checked at compile time,but they are
+					checked at runtime are known as Unchecked Exceptions.
+					The classes that inherit the RuntimeException are known as unchecked exception.
+					
+					example :
+								ArithmaticException,NullpointerException ArrayIndexPutOfBountsException etc.
+
+	
+	
+
+How to create a User-defined unchecked exception class?
+			
+			
+			The RuntimeException class is the superclass of all unchecked exceptions. Hence we can create a
+			 custom unchecked exception by extending RuntimeException class.
+			
+				public class NullPointerException extends RuntimeException{
+				
+					NullPointerException(String errorMessage){
+					super(errorMessage);
+					
+					}
+					
+					NullPointerException(){
+					}
+					
+				}
+				
+	
+											
