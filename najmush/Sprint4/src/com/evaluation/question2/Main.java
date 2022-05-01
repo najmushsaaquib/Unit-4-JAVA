@@ -10,7 +10,6 @@ public class Main {
 
 		Scanner scn = new Scanner(System.in);
 
-		Scanner sc = new Scanner(System.in);
 		Set<String> uniqueWords = new TreeSet<>();
 
 		System.out.println("Enter Student's Article");
