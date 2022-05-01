@@ -1,0 +1,9 @@
+
+			------------ Race Condition --------------
+			
+			
+			When two or more than two Threads are trying to access same type of shared memory 
+			resource, we face a situation called Race Condition.
+			
+			This can create problems and can throw exception cases as well.
+			
