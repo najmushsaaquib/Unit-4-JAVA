@@ -1,0 +1,13 @@
+
+
+				Wait();
+				
+				Basically, wait() method is used to suspend a synchronized thread unconditionally;
+				
+				Notify();
+				
+				If a thread is already in the suspended state, we need to resume it. That is why we
+				use notify() method to resume the thread;
+				 
+	
+			
